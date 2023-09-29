@@ -225,6 +225,13 @@
             }
         });
 
+        answerButton2.addEventListener('click', function () {
+            sessionUserAnswerField.innerText += '2';
+            if (sessionUserAnswerField.innerText.length == 3) {
+                checkAnswer(sessionUserAnswerField.innerText);
+            }
+        });
+
         answerButton3.addEventListener('click', function () {
             sessionUserAnswerField.innerText += '3';
             if (sessionUserAnswerField.innerText.length == 3) {
